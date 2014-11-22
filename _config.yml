@@ -1,12 +1,57 @@
-# Site settings
-title: Chris Laughlin
-email: contact@christopherlaughlin.co.uk
-description: > # this means to ignore newlines until "baseurl:"
-  Rambling of a full stack web application developer, lots of JavaScript and mybe some photos.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "//chrislaughlin.github.io" # the base hostname & protocol for your site
-twitter_username: chrislaughlin
-github_username:  chrislaughlin
+# Site wide configuration
 
-# Build settings
-markdown: kramdown
+title:            Chris Laughlin
+locale:           en_UK
+url:              http://localhost:4000
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: Chris Laughlin
+  avatar: bio-photo.jpg
+  bio: "Full stack application developer."
+  email: contact@christopherlaughlin.co.uk
+  disqus-shortname: chrislaughlin
+  twitter: chrislaughlin
+  facebook: christopher.laughlin1
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: chrislaughlin
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: chrislaughlin
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
