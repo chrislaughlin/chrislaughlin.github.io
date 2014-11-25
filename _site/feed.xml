@@ -6,8 +6,8 @@
 </description>
     <link>//chrislaughlin.github.io/</link>
     <atom:link href="//chrislaughlin.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Nov 2014 21:33:34 +0000</pubDate>
-    <lastBuildDate>Fri, 21 Nov 2014 21:33:34 +0000</lastBuildDate>
+    <pubDate>Tue, 25 Nov 2014 21:00:44 +0000</pubDate>
+    <lastBuildDate>Tue, 25 Nov 2014 21:00:44 +0000</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -35,6 +35,583 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Web Storm: Live Templates</title>
+        <description>&lt;p&gt;After reading through a recent Reddit post on popular JavaScript IDE’s, I discovered a hidden gem in the Jet Brains
+IDE range (Intellij, Web Storm etc). Live templates provide a way of adding key shortcuts for common code snippets,
+allowing you to assign abbreviations to code snippets and even have template variables.  You can access the live templates
+by going to settings and searching for “Live Templates” you will see a list of the current templates. On this
+screen you will be able to add new templates, below are a few examples that I have added.&lt;/p&gt;
+
+&lt;h3 id=&quot;for-loop&quot;&gt;For Loop&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;abbr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;desc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;loop&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$INDEX$&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jsSuggestIndexName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$ARRAY$&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jsArrayVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$VAR$&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;decapitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jsArrayVariable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())}&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$INDEX$&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;len&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$ARRAY$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$INDEX$&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$INDEX$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$VAR$&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$ARRAY$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$INDEX$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$END$&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;console-log&quot;&gt;Console Log&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/**&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; * @abbr: clog&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; * @desc: console log&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt; */&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$END$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/11/consoleLog.gif&quot;&gt;&lt;img class=&quot;size-full wp-image-1877 aligncenter&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/11/consoleLog.gif&quot; alt=&quot;switch&quot; width=&quot;371&quot; height=&quot;237&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;switch&quot;&gt;Switch&lt;/h3&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;cm&quot;&gt;/**&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;* @abbr: sw&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;* @desc: switch statement&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;* @param: $condition$&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;* @parm: $case$&lt;/span&gt;
+&lt;span class=&quot;cm&quot;&gt;**/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$condition$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$case$&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$END$&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/11/switch.gif&quot;&gt;&lt;img class=&quot;size-full wp-image-1877 aligncenter&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/11/switch.gif&quot; alt=&quot;switch&quot; width=&quot;371&quot; height=&quot;237&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;You can find a large list of useful templates &lt;a href=&quot;https://gist.github.com/ngryman/4760153&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
+        <link>//chrislaughlin.github.io/2014/11/16/web-storm-live-templates/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/11/16/web-storm-live-templates/</guid>
+        
+        <category>idea</category>
+        
+        <category>javascript</category>
+        
+        <category>webstrom</category>
+        
+        
+        <category>applications</category>
+        
+        <category>development</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>Podcasts</title>
+        <description>&lt;p&gt;Been thinking about putting a post together like this for a while and after seeing a tweet from another tech professional I decided to put together my own post listing the podcasts that I subscribe to.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;
+  &lt;p&gt;
+    Just updated a post on my Soapbox site &amp;#8220;Podcasts I subscribe to&amp;#8221; &lt;a href=&quot;http://t.co/Gc0HqZsDj7&quot;&gt;http://t.co/Gc0HqZsDj7&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    — Ian Robinson (@IanRobinson) &lt;a href=&quot;https://twitter.com/IanRobinson/status/526043575210221568&quot;&gt;October 25, 2014&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;programming&quot;&gt;Programming&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://devchat.tv/js-jabber/&quot; target=&quot;_blank&quot;&gt;JavaScript Jabber&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;JavaScript Jabber is a weekly podcast that discusses font and backend JavaScript, coding best practices, coding environments and the JavaScript community. Hosted by &lt;a href=&quot;http://devchat.tv/hosts/Joe%20Eames&quot; target=&quot;_blank&quot;&gt;Joe Eames&lt;/a&gt;, &lt;a href=&quot;http://devchat.tv/hosts/cmaxw&quot; target=&quot;_blank&quot;&gt;Charles Max Wood&lt;/a&gt;, &lt;a href=&quot;http://devchat.tv/hosts/jamison-dance&quot; target=&quot;_blank&quot;&gt;Aj O’Neal&lt;/a&gt; and &lt;a href=&quot;http://devchat.tv/hosts/jamison-dance&quot; target=&quot;_blank&quot;&gt;Jamison Dance&lt;/a&gt; from &lt;a href=&quot;http://devchat.tv/&quot; target=&quot;_blank&quot;&gt;DevChat.TV&lt;/a&gt;, a must have podcast for any JavaScript developer. The guys have covered a very wide range of topics with regular guest from big name companies and communities from Angular and ember core developers to &lt;a href=&quot;http://devchat.tv/js-jabber/124-jsj-the-origin-of-javascript-with-brendan-eich&quot; target=&quot;_blank&quot;&gt;Brendan Eich&lt;/a&gt; (which was my favourite show to date). With years of experience in the professional JavaScript development world between them you are sure to hear about the latest and greatest tools and advancements in the JavaScript world. However if you are not a leet Javascript developer don’t be scarred as the guys are not afraid to ask what certain terms and patters are and get explanations for those who might not know.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-hrefhttpnodeupcom-targetblanknodeupa&quot;&gt;&lt;a href=&quot;http://nodeup.com/&quot; target=&quot;_blank&quot;&gt;NodeUp&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;In very simple terms NodeUp is a weekly podcast is a about Node.js, each week a different aspect of node is looked at usually with guests who are closely related to the topic and can provide a deep insight into the technology. With big name guests from the likes of Netflix, Socket IO developers and even the people behind NPM. This podcasts gives you a weekly insight into the world of node and what progression is going on inside and outside of the different communities that support and help Node grow. the podcast has also recently branched out to include an Australia segment that gives a voice to the quickly growing Node community growing in Australia and Asia. With hosts varying the most frequent hosts are &lt;a href=&quot;http://twitter.com/dshaw&quot; target=&quot;_blank&quot;&gt;Dan Shaw&lt;/a&gt; and &lt;a href=&quot;http://twitter.com/secoif&quot; target=&quot;_blank&quot;&gt;Tim Oxley&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-hrefhttpdevchattvadventures-in-angular-targetblankadventures-in-angulara&quot;&gt;&lt;a href=&quot;http://devchat.tv/adventures-in-angular/&quot; target=&quot;_blank&quot;&gt;Adventures in Angular&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Adventures in Angular is a dedicated Angular JS podcast forged by some of the hosts from JavaScript Jabber, I have only recently started to listen but I’m already blown way by the content and the tips and tricks that i have learnt. Running on the same format as JavaScript Jabber each week someone from the Angular JS world joins the hosts Joe Eames, Charles Max Wood and John Papa. What makes the podcast great is the focus on one part of Angular that gives you a look at what professional Angular developers think about parts of the framework and the workflows that they use. If you develop Angular for your profession or for fun this is a podcast for you, with the tips section at the end I have learnt or had my previous knowledge reinforced every time iv listened.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;tech-news&quot;&gt;Tech News&lt;/h2&gt;
+
+&lt;h3 id=&quot;a-hrefhttptwittvshowthis-week-in-tech481-targetblanktwita&quot;&gt;&lt;a href=&quot;http://twit.tv/show/this-week-in-tech/481&quot; target=&quot;_blank&quot;&gt;TWIT&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;TWIT (This Week inTech) is a podcast that I have been following for years it is a weekly podcast hosted by the powerhouse podcaster &lt;a href=&quot;http://twit.tv/people/leo-laporte&quot;&gt;Leo Laporte&lt;/a&gt;. It’s the flagship show of the &lt;a class=&quot;mw-redirect&quot; title=&quot;TWiT network&quot; href=&quot;http://wiki.twit.tv/wiki/TWiT_network&quot;&gt;TWiT network&lt;/a&gt;. It was the network’s first show, and it focuses on technology news, often from the prior week, and reviews. It is an audio podcast presented in a round-table fashion. In addition to host &lt;a href=&quot;http://wiki.twit.tv/wiki/Leo_Laporte&quot; title=&quot;Leo Laporte&quot;&gt;Leo Laporte&lt;/a&gt;, who has appeared in nearly every episode, the show features a panel of usually two to five guests, which changes regularly. Some panelists appear more regularly than others. Covering all aspects of technology from smartphones, apps, hacks and memes you will be sure to get your weekly dose of tech. I find it hard at times to read tech news blogs daily to keep up with whats happening and trying to filtering out the junk. This podcast gives you whats important and some of the fluff for fun, with great personalities on each week you’ll be sure to listen or watch.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-hrefhttpswwwgooglecoukurlsatrctjqesrcssourcewebcd1cadrjauact8ved0ccmqfjaaurlhttp3a2f2ftwittv2fshow2fmacbreak-weeklyeizrjovmt1eour7abtnydabausgafqjcnhbpplxixetide7llpq7uhfp1elzasig2qpzycqsdptumxndghkszdqbvmbv77880786dzgu-targetblankmacbreak-weeklya&quot;&gt;&lt;a href=&quot;https://www.google.co.uk/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0CCMQFjAA&amp;amp;url=http%3A%2F%2Ftwit.tv%2Fshow%2Fmacbreak-weekly&amp;amp;ei=zrJOVMT1EOuR7AbTnYDABA&amp;amp;usg=AFQjCNHbPPLxiXetidE7LLpQ7uhFP1eLzA&amp;amp;sig2=QpZYCQSDpTUMxNdGhKsZdQ&amp;amp;bvm=bv.77880786,d.ZGU&quot; target=&quot;_blank&quot;&gt;MacBreak Weekly &lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;MacBreak Weekly is a weekly show hosted by &lt;a href=&quot;http://wiki.twit.tv/wiki/Leo_Laporte&quot; title=&quot;Leo Laporte&quot;&gt;Leo Laporte&lt;/a&gt; that premiered on August 12th, 2006 as an audio spinoff of &lt;a class=&quot;external text&quot; href=&quot;http://www.pixelcorps.tv/macbreak&quot; rel=&quot;nofollow&quot;&gt;MacBreak&lt;/a&gt;, a PixelCorps production that focuses on discussion of Apple news, products and rumours. If you are a mac user you will want to listen to this, at times it can become a bit of a mac fan boy hour but you’ll get to know whats going on with apps or new releases of all things mac.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;misc&quot;&gt;Misc&lt;/h2&gt;
+
+&lt;h3 id=&quot;pc-keepnet-title&quot;&gt;&lt;a href=&quot;http://www.bbc.co.uk/podcasts/series/bottomline&quot; target=&quot;_blank&quot;&gt;The Bottom Line with Evan Davis&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Insight into business from the people at the top. Evan Davis meets influential business leaders for a round table conversation about the issues that matter to their companies and their customers. This is great podcast that has gave me some great party conversations from the episode with a sex toy company, a medical marijuana seller and a halal holiday booking firm. Always very interesting topics and even more interesting people.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-hrefhttpwwwbbccoukpodcastsseriesmoreorless-targetblankmore-or-less-behind-the-statsa&quot;&gt;&lt;a href=&quot;http://www.bbc.co.uk/podcasts/series/moreorless&quot; target=&quot;_blank&quot;&gt;More or Less: behind the stats&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Tim Harford investigates numbers in the news. Numbers are used in every area of public debate. But are they always reliable? Tim and the More or Less team try to make sense of the statistics which surround us. A half-hour programme broadcast at 1600 on Friday afternoons and repeated at 2000 on Sundays on Radio 4.&lt;/p&gt;
+
+&lt;h3 id=&quot;page-title&quot;&gt;&lt;a href=&quot;http://www.scroobiuspip.co.uk/distraction-pieces-podcast/&quot; target=&quot;_blank&quot;&gt;Distraction Pieces Podcast&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;In this weekly podcast &lt;a href=&quot;http://www.scroobiuspip.co.uk/&quot; target=&quot;_blank&quot;&gt;Scroobius Pip&lt;/a&gt; talks to various guests discussing many issues in a long form format, no trivial bite sized comments to be found, getting to the bottom of what matters. The first episode is with none other than Russell Brand, discussing capitalism, life and the universe! Upcoming podcasts will include Zane Lowe, Alan Moore &amp;amp; DJ Yoda. This is the latest podcast that I have started listing to, as a fan of Scroobius Pips music I was looking forward to hearing more from him and so far I have not been disappointed, I will be looking forward to hearing more from him.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;If you listen or watch any interesting podcasts please let me know in the comments section as im always on the look out for something to listen to on the walk to work.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 27 Oct 2014 00:00:00 +0000</pubDate>
+        <link>//chrislaughlin.github.io/2014/10/27/podcasts/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/10/27/podcasts/</guid>
+        
+        <category>podcasts</category>
+        
+        
+        <category>media</category>
+        
+      </item>
+    
+      <item>
+        <title>NOOP: No Operation Function</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;A function that performs no operations. This function can be useful when writing code in the functional style.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The noop function seem pointless when you first look at it but, once you see it in action you realise that it provides a
+method of keeping code clean and maintainable. One main example I have seen of the noop function is in the jQuery source
+when defining a properties on an object and wanting to add an empty function as a placeholder:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;The noop function was introduced into jQuery in &lt;a href=&quot;https://github.com/jquery/jquery/commit/6cb2945837ccca55204191a8e7a70b2b2486c28e&quot; target=&quot;_blank&quot;&gt;December 2009&lt;/a&gt; as a better way of using anonymous empty functions, it actually provides a small (1-10%) performance improvement a
+s a new function reference is not created each time noop is used. The function has been added to other JavaScript libraries
+ so provide support of this pattern these include &lt;a href=&quot;https://docs.angularjs.org/api/ng/function/angular.noop&quot; target=&quot;_blank&quot;&gt;Angular&lt;/a&gt;
+  and as mention above &lt;a href=&quot;http://api.jquery.com/jquery.noop/&quot; target=&quot;_blank&quot;&gt;jQuery&lt;/a&gt;. There is also a pure JavaScript way off achieving
+  this by using Function.prototype();&lt;/p&gt;
+
+&lt;p&gt;This does not provide a load of advantage but in my option can clean up code and can reduce some line number. It’s
+a nifty little part of jQuery I had never seen before and though I would share.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Aug 2014 00:00:00 +0100</pubDate>
+        <link>//chrislaughlin.github.io/2014/08/25/noop-no-operation-function/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/08/25/noop-no-operation-function/</guid>
+        
+        <category>angular</category>
+        
+        <category>callback</category>
+        
+        <category>function</category>
+        
+        <category>javascript</category>
+        
+        <category>jquery</category>
+        
+        <category>noop</category>
+        
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>React JS Contact Card</title>
+        <description>&lt;p&gt;I recently attended a talk/master class on &lt;a href=&quot;http://facebook.github.io/react/&quot; target=&quot;_blank&quot;&gt;ReactJS&lt;/a&gt; given by &lt;a href=&quot;https://twitter.com/kouphax&quot; target=&quot;_blank&quot;&gt;James Hughes&lt;/a&gt; which covered the basics of the JavaScript framework including where it came from and how it works. I had seen some posts on reddit talking about React before but never really seen examples in the wild.&lt;/p&gt;
+
+&lt;p&gt;React was developed by Facebook it is a component based framework that focuses on the UI. Its promoted as the V in the MVC stack as React can be easily dropped into existing application. The logic behind React is the “virtual DOM” this enables React to update the UI in a one way reactive data flow. This provides a very different approach to the common two-way binding found many other JavaScript frameworks like &lt;a title=&quot;Angular JS&quot; href=&quot;https://angularjs.org/&quot; target=&quot;_blank&quot;&gt;Angular&lt;/a&gt; and &lt;a title=&quot;Ember JS&quot; href=&quot;http://emberjs.com/&quot; target=&quot;_blank&quot;&gt;Ember&lt;/a&gt;. The virtual DOM allows React to only update parts of the DOM that need changed, thus reducing the overhead of DOM manipulation. React components can be written in JavaScript or in JSX which compiles at build time to JavaScript. Facebook and Instagram use React for live components which show the technology can stand strong in the world of production code.&lt;/p&gt;
+
+&lt;p&gt;React has a flat learning curve, as if you already know JavaScript you can just jump right into React. The only struggle is getting you head around the life cycle of a component and how to achieve reactiveness with the single way binding.&lt;/p&gt;
+
+&lt;p&gt;After attending the talk and talking to a developer &lt;a title=&quot;TWAT!!&quot; href=&quot;https://twitter.com/madole&quot; target=&quot;_blank&quot;&gt;friend&lt;/a&gt; we disagreed on the best approach to writing a React component; use JSX or JavaScript. I have never been a fan of languages that compile into JavaScript, I feel that it can sometimes over complicate an already tricky language. I also hate having to learn new syntax’s as I know too many already. To be fair there might be some advantages but I’m going to stick with my guns and go pure JavaScript.&lt;/p&gt;
+
+&lt;p&gt;We decided that we would both build a contact card in React and compare the code for readability, maintainability and over all look and feel. The min requirements were as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Must take take data from json&lt;/li&gt;
+  &lt;li&gt;Must present an avatar image&lt;/li&gt;
+  &lt;li&gt;Must show name and tag line&lt;/li&gt;
+  &lt;li&gt;Must have links to user sites: 
+    &lt;ul&gt;
+      &lt;li&gt; Github&lt;/li&gt;
+      &lt;li&gt;Facebook&lt;/li&gt;
+      &lt;li&gt;Linkedin&lt;/li&gt;
+      &lt;li&gt;Twitter&lt;/li&gt;
+      &lt;li&gt;CV&lt;/li&gt;
+      &lt;li&gt;Blog ** the last two I added when building as they felt needed&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After a few hours of mocking out what the card would look like I settled with the below design, I’m not an artist or a web designer so it’s not the best looking.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/08/Screen-Shot-2014-08-10-at-17.54.19.png&quot;&gt;&lt;img class=&quot;aligncenter size-medium wp-image-1836&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/08/Screen-Shot-2014-08-10-at-17.54.19-400x260.png&quot; alt=&quot;Screen Shot 2014-08-10 at 17.54.19&quot; width=&quot;400&quot; height=&quot;260&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once I got the design down I started working from the smallest component up, trying to keep the card as extendable as possible I decided to break it up into a number of components. I started with the links these could be reused and would need data to be passed in so that the icon and link URI would be set. Below is the code for the link component.  &lt;/p&gt;
+
+&lt;p&gt;The link component will be called with the source (link URI) and the type facebook, github etc. I can then call this multiple times for the links that are rendered. This is the only component that houses any logic the others are more or less just printing elements with the data from the JSON. I Found the code to be easy to work with and actually fun to build with as it only took an hour to write.  I will hopefully be expanding the code and building more advanced components that expose the React stack.&lt;/p&gt;
+
+&lt;p&gt;You can find the full code for the contact card on &lt;a title=&quot;Code Pen&quot; href=&quot;http://codepen.io/chrislaughlin/pen/veEdI&quot; target=&quot;_blank&quot;&gt;CodePen&lt;/a&gt;, you can also find loads more of examples on the React site and this really useful &lt;a title=&quot;5 Practical Examples for React JS &quot; href=&quot;http://tutorialzine.com/2014/07/5-practical-examples-for-learning-facebooks-react-framework/&quot; target=&quot;_blank&quot;&gt;tutorial&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 Aug 2014 00:00:00 +0100</pubDate>
+        <link>//chrislaughlin.github.io/2014/08/10/react-js-contact-card/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/08/10/react-js-contact-card/</guid>
+        
+        <category>angularjs</category>
+        
+        <category>codepen</category>
+        
+        <category>development</category>
+        
+        <category>emberjs</category>
+        
+        <category>facebook</category>
+        
+        <category>github</category>
+        
+        <category>javascript</category>
+        
+        <category>reactjs</category>
+        
+        <category>twitter</category>
+        
+        
+        <category>applications</category>
+        
+        <category>apps</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>Worker Queue: My First JavaScript Library</title>
+        <description>&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;While working on a project for a customer I had to develop some code that would handle the validation of products a user was adding and configuring. The products could have up to 100 attributes and relationships to other products with a large amount of validation criteria. A need was to have the validation process in the background while the user configured and carried out other actions, the validation would change the colour of icons on the screen. Unfortunately I had support Internet Explore (&lt;em&gt;for reason ill not get into&lt;/em&gt;) and this meant I was quickly going to run into JavaScript issues. My first approach was to just take each product loop through them and call the required validation functions. This worked fine via Chrome and was very quick to complete, even when the user was carrying out other action that required JavaScript. However when trying the same in Internet Explore I ran into the dreaded long running script error.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/08/stoprunningscript1.png&quot;&gt;&lt;img class=&quot;size-medium wp-image-1826 aligncenter&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/08/stoprunningscript1-400x201.png&quot; alt=&quot;stoprunningscript1&quot; width=&quot;400&quot; height=&quot;201&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;After profiling the page it seemed that the processing of the product including the validation functions were not causing the issue it was more related to the amount of products and the time taken to process them all. The fact that this needed to be done once the page loaded caused a lockup on the screen which prevented the user from carrying out any actions until the validation finished. I tried to reduce the processing and add JavaScript performance improvements. But this only meant that the code would handle a little more products each time I always reached a point were I would see the script error again.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-solution&quot;&gt;The Solution&lt;/h2&gt;
+
+&lt;p&gt;The best solution was to introduce a “&lt;em&gt;multi-threaded&lt;/em&gt;” style service that would allow me to process the products without creating a bottle neck in the application code. It’s well-known JavaScript is single threaded so a real multi-threaded approach is not possible. The customer project in question was using Angular JS for the front end application code so I built an angular service. The service was built around the idea of using timeouts to delay the processing of the JavaScript. The service provided the ability to create a queue and set a function for processing then push items into the queue.&lt;/p&gt;
+
+&lt;p&gt;That takes us to now, I have recently been trying to branch out my JavaScript skills and contribute more to the community so I decided to provide the queue processor as a library, As it was originally an angular service it ported very easy I was also able to add more features such as delete queue and being able to set the delay. I followed &lt;a href=&quot;http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796&quot; target=&quot;_blank&quot;&gt;Andrew Burgess&lt;/a&gt; post on creating a JavaScript library to help me build up the needed code for exposing the functions.  You can see a very basic example below:  &lt;/p&gt;
+
+&lt;p&gt;You can check out the code from &lt;a href=&quot;https://github.com/chrislaughlin/worker-queue&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt; to see the inner workings and how the processing is done, you can also install the Worker Queue from bower by following the instructions on the GitHub page. I hope to use the worker queue in future projects and hope to add more features.&lt;/p&gt;
+
+&lt;p&gt;Please check the code out let me know what you think and hopefully it will provide some use to other people.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 03 Aug 2014 00:00:00 +0100</pubDate>
+        <link>//chrislaughlin.github.io/2014/08/03/worker-queue-my-first-javascript-library/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/08/03/worker-queue-my-first-javascript-library/</guid>
+        
+        <category>angularjs</category>
+        
+        <category>github</category>
+        
+        <category>javascript</category>
+        
+        <category>processing</category>
+        
+        <category>queue</category>
+        
+        
+        <category>applications</category>
+        
+        <category>code</category>
+        
+        <category>development</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>5 Most Depended-upon NPM Packages</title>
+        <description>&lt;p&gt;So after my last post on npm packages being removed, I started to realise that I don’t know that many packages and most of the times I use what was already installed in the project. So I took to the interwebs looking for some most used packages. This led me to the list of the most &lt;a href=&quot;https://www.npmjs.org/browse/depended&quot; target=&quot;_blank&quot;&gt;depended-upon&lt;/a&gt; packages and here is a run down of the top 5:&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;a-titleunderscore-package-hrefhttpswwwnpmjsorgbrowsedependedunderscore-targetblankunderscorea&quot;&gt;&lt;a title=&quot;Underscore package&quot; href=&quot;https://www.npmjs.org/browse/depended/underscore&quot; target=&quot;_blank&quot;&gt;Underscore&lt;/a&gt;&lt;/h2&gt;
+
+&lt;h6 id=&quot;span-stylecolor-6666666481-packagesspan&quot;&gt;&lt;span style=&quot;color: #666666;&quot;&gt;6481 Packages&lt;/span&gt;&lt;/h6&gt;
+
+&lt;p&gt;Underscore is a until library that is not only used for NodeJs application but for any JavaScript application, it can be easily seen by the signature “_.”  with methods that can manage a wide range of action from simple null and undefined checks to searching, filtering and mapping arrays. I use underscore currently with an Angular application to add more functionality to arrays.  The most popular methods include _.each, _.some and _.uniq. Looping an array, searching an array and removing duplicates are all simple operations but do require some redundant code. Underscore provides a simple to use array of helper methods all working from closures. Although recent advancements in JavaScript performance has seen other libraries such as &lt;a title=&quot;Lazy JS&quot; href=&quot;http://danieltao.com/lazy.js/&quot; target=&quot;_blank&quot;&gt;Lazy JS&lt;/a&gt; come out and claim to be faster than underscore.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 style=&quot;color: #000000;&quot;&gt;
+  &lt;a title=&quot;Async&quot; href=&quot;https://github.com/caolan/async&quot; target=&quot;_blank&quot;&gt;Async&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;h6 id=&quot;span-stylecolor-6666665833-packagesspan&quot;&gt;&lt;span style=&quot;color: #666666;&quot;&gt;5833 packages&lt;/span&gt;&lt;/h6&gt;
+
+&lt;p&gt;Async is a utility package that provides powerful functions for working with asynchronous JavaScript. It supports usage with Node and the browser. Async allows you to process a block of data using a predefined function and deal with the results. This can be very useful for dealing with the opening and processing of multiple files. All these functions assume you follow the Node.js convention of providing a single callback as the last argument of your &lt;code&gt;async&lt;/code&gt; function. I have yet to work with this library,as the library is built around async processing I feel something like &lt;a title=&quot;Q &quot; href=&quot;https://github.com/kriskowal/q&quot; target=&quot;_blank&quot;&gt;Q&lt;/a&gt; or another promise library could be used instead.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;a-titlerequest--hrefhttpsgithubcommikealrequest-targetblankrequesta&quot;&gt;&lt;a title=&quot;Request &quot; href=&quot;https://github.com/mikeal/request&quot; target=&quot;_blank&quot;&gt;Request&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: #666666;&quot;&gt;4905 packages&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Request a simple lightweight and easy to use http library, providing the standard http CRUD methods. The request developers boast that the library is the easiest to use, I have used this before on some project for talking to third party APIs. This has proved tricky when you run into same site origin errors, however this was due to the scenario that I was working with.  The below code shows how easy request is to use.  &lt;/p&gt;
+
+&lt;h2 id=&quot;a-titlelo-dash-hrefhttplodashcom-targetblanklo-dasha&quot;&gt; &lt;a title=&quot;Lo-Dash&quot; href=&quot;http://lodash.com/&quot; target=&quot;_blank&quot;&gt;Lo-Dash&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h6 id=&quot;span-stylecolor-6666663985-packagesspan&quot;&gt;&lt;span style=&quot;color: #666666;&quot;&gt;3985 packages&lt;/span&gt;&lt;/h6&gt;
+
+&lt;p&gt;Lo-dash is another utility library that actually was the parent to the above mentioned underscore library. It contains many of the method’s such as map, each and some other advanced functions &lt;span style=&quot;color: #222222;&quot;&gt;for creating &lt;/span&gt;&lt;a style=&quot;color: #222222;&quot; href=&quot;http://hughfdjackson.com/javascript/why-curry-helps/&quot;&gt;curried&lt;/a&gt;&lt;span style=&quot;color: #222222;&quot;&gt; functions&lt;/span&gt; and other patterns.  It has since become a superset of Underscore, providing more consistent API behavior, more features (like AMD support, deep clone, and deep merge), more thorough documentation and unit tests (tests which run in Node, Ringo, Rhino, Narwhal, PhantomJS, and browsers), better overall performance and optimizations for large arrays/object iteration, and more flexibility with custom builds and template pre-compilation utilities.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-titlecommander-js-hrefhttpsgithubcomvisionmediacommanderjs-targetblankcommandera&quot;&gt;&lt;a title=&quot;Commander JS&quot; href=&quot;https://github.com/visionmedia/commander.js&quot; target=&quot;_blank&quot;&gt;Commander&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h6 id=&quot;span-stylecolor-6666663294-packagesspan&quot;&gt;&lt;span style=&quot;color: #666666;&quot;&gt;3294 packages&lt;/span&gt;&lt;/h6&gt;
+
+&lt;p&gt;Commander is a on stop shop for command line integration with Node JS.  Following a method chaining structure commander allows you to pass options for the shell command. The library is strongly influenced by the Ruby &lt;a title=&quot;Ruby Commander&quot; href=&quot;https://github.com/visionmedia/commander&quot; target=&quot;_blank&quot;&gt;commander&lt;/a&gt; gem. The main purpose of the commander package is to create a command line interface for your application. A very useful feature is the auto generation of help information and example is shown below:  &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+        <pubDate>Tue, 15 Jul 2014 00:00:00 +0100</pubDate>
+        <link>//chrislaughlin.github.io/2014/07/15/5-most-depended-upon-npm-packages/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/07/15/5-most-depended-upon-npm-packages/</guid>
+        
+        <category>javascript</category>
+        
+        <category>npm</category>
+        
+        <category>packages</category>
+        
+        
+        <category>applications</category>
+        
+        <category>development</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>NPM: Why You Should Never &amp;#8220;npm-unpublish&amp;#8221;</title>
+        <description>&lt;p&gt;&lt;span id=&quot;1-293&quot; class=&quot;white bg-black&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;“npm&lt;/span&gt;&lt;span id=&quot;1-294&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;&lt;span id=&quot;1-295&quot; class=&quot;red bg-black&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;ERR!&lt;/span&gt;&lt;span id=&quot;1-296&quot; class=&quot;magenta&quot;&gt;&lt;span style=&quot;color: #000000;&quot;&gt; TypeError: Cannot read property ‘latest’ of undefined”&lt;/span&gt;&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;
+  &lt;/span&gt;&lt;span id=&quot;1-296&quot;&gt;My build is failing on Travis CI but not locally, what is going on? This is what I was thinking last night after working on a feature for &lt;/span&gt;&lt;span id=&quot;1-296&quot;&gt;&lt;a title=&quot;Time Booker Github&quot; href=&quot;https://github.com/cam-technologies/time-booker&quot; target=&quot;_blank&quot;&gt;Time Booker&lt;/a&gt; making a pull request and watching the build fail. I had a quick Google search and found some people talking about npm packages not downloading correctly so I decided to kick off the build again. &lt;/span&gt;
+&amp;lt;/p&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;
+  Failure again!  The same message but still no more details on what happened, we do have a pre-commit hook that will run everything except the production release task. I did not want to run this locally as it is very much built around being run on a Travis CI box. At this point it was getting late and I passed it off to the team to have a look at, thankfully we have an off shore member who is 9 hours ahead and was able to look at the issue while I slept.
+&lt;/p&gt;
+
+&lt;p&gt;
+  It turns out that one of the gulp packages we use (&lt;a href=&quot;https://github.com/tomchentw-deprecated/gulp-conventional-changelog/issues/1&quot; target=&quot;_blank&quot;&gt;gulp-conventional-changelog&lt;/a&gt;) had been removed from the npm repository. So why did this not fail on my pre-commit task? why did it fail on Travis? If you develop with node you will most likely run &amp;#8220;npm install&amp;#8221; on a fresh checkout of a project and after this always run &amp;#8220;npm install some-random-package&amp;#8221;. This is where the issue comes from, since I ran npm install when the change log package was in the repository it was downloaded to my npm modules folder and I never thought about it again. However when the build runs on Travis it will always clean up beforehand so the packages will always be downloaded as if it was a first time install and since the install is run with the quite param it would not give details on which package failed.
+&lt;/p&gt;
+
+&lt;p&gt;
+  If you were not to throw away your local modules folder and npm install you would never get the error. This brings many solutions into play:
+&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    Set up and use your own node repository &lt;ul&gt;
+      &lt;li&gt;
+        This would prevent the error and allow for offline deployments however you would never know if a package was removed (and this is usually is for a good reason)
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  
+  &lt;li&gt;
+    Clean your local node modules folder every time you push to your remote repository &lt;ul&gt;
+      &lt;li&gt;
+        This can take up a lot of time and is not maintainable
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  
+  &lt;li&gt;
+    Force developers to not remove the package is there are any downloads from the main repository &lt;ul&gt;
+      &lt;li&gt;
+        This seems to be the best way and &lt;a title=&quot;npm-unpublish&quot; href=&quot;https://www.npmjs.org/doc/cli/npm-unpublish.html&quot; target=&quot;_blank&quot;&gt;recommended by npm&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+  The good people at npm recommend using &lt;a title=&quot;npm-deprecate&quot; href=&quot;https://www.npmjs.org/doc/cli/npm-deprecate.html&quot; target=&quot;_blank&quot;&gt;npm-deprecate&lt;/a&gt; instead this will show a message to the user that they should stop using the package and hopefully recommend a new package or work around. Another advantage of the method is to support old project code. I have worked on many projects that use old libraries that have either gone out of support/development but there is no advantage of changing this so the project needs this library to be available for re-download etc.
+&lt;/p&gt;
+
+&lt;p&gt;
+  So the take-way from from this is always deprecate the package or people will cry!  One suggestion I have is only allow admins of the npm repository to remove packages and allow developers to only deprecate the package (but this could break down the community spirit of npm).
+&lt;/p&gt;
+</description>
+        <pubDate>Tue, 08 Jul 2014 00:00:00 +0100</pubDate>
+        <link>//chrislaughlin.github.io/2014/07/08/npm-why-you-should-never-npm-unpublish/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/07/08/npm-why-you-should-never-npm-unpublish/</guid>
+        
+        <category>gulp</category>
+        
+        <category>javascript</category>
+        
+        <category>node</category>
+        
+        <category>npm</category>
+        
+        <category>package</category>
+        
+        
+        <category>applications</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>JavaScript Loop Performance</title>
+        <description>&lt;p&gt;I recently had a Google hangout with my team at CAM Tech, we got chatting about other work we had been bogged down with and one team member mentioned that he was working on JavaScript performance work “removing all the for in loops”. I had mentioned that a reverse while loop usually gives you the best performance however he countered with a standard for loop with a pre increment (++i). All of this got me thinking about loop performance as i had taken this task on recently before and though I would do some experiments.&lt;/p&gt;
+
+&lt;p&gt;To start off I would look at the standard for loop with i++ and compare with ++i.&lt;/p&gt;
+
+&lt;h2 id=&quot;for-loops&quot;&gt;For Loops&lt;/h2&gt;
+
+&lt;p&gt;Running the above code returns the following times: loop ++i: 0.040ms loop i++: 0.024ms loop length var: 0.029ms loop reverse: 0.016ms So from the results we can see that the quickest loop was the reverse loop. So from looking around and doing some reading its not the act of looping in reverse its the fact that the index (i) is defined as the length of the array which takes away the need for checking the length of the array on each iteration. However this could not be completely true as we can see that the loop length var also sets the length variable so that its not looked up on every iteration. It could be the cost of addition is more that subtraction, time for more tests I think.&lt;br /&gt;
+So after running the above and getting some strange results, I had to run each 5 times to get an average and it was clear that subtraction was quicker with an average of 25.4 ms while addition had an average of 27ms. This might explain the loop performance its not just the fact that the length is not being calculated each time but that the action of subtraction is being used.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;take-aways&quot;&gt;Take Aways&lt;/h2&gt;
+
+&lt;p&gt;So from the examples we can see that if you want your loop to be as fast as possible then cache the length and iterate backwards through the loop. However not all scenarios can handle the backwards iteration as some loops need a order to be maintained.  Some other interesting reading and test can be found behind the following links.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1340589/javascript-are-loops-really-faster-in-reverse&quot; target=&quot;_blank&quot;&gt;Are reverse loops really faster Stackoverflow&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jsperf.com/firstlooptest/6&quot; target=&quot;_blank&quot;&gt;Loop Test&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</description>
+        <pubDate>Sun, 29 Jun 2014 00:00:00 +0100</pubDate>
+        <link>//chrislaughlin.github.io/2014/06/29/javascript-loop-performance/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/06/29/javascript-loop-performance/</guid>
+        
+        <category>for</category>
+        
+        <category>javascr</category>
+        
+        <category>loop</category>
+        
+        <category>Performance</category>
+        
+        
+        <category>development</category>
+        
+        <category>javascript</category>
+        
+      </item>
+    
+      <item>
+        <title>Review: Codio Cloud Based IDE</title>
+        <description>&lt;p&gt;So ever since I got a Chromebook I have been mainly using it for quick browsing (when a phone wont do), taking notes when at events or talks and blogging from.  I had heard of cloud based editing and development for ages, I’m a large fan of &lt;a href=&quot;http://jsfiddle.net/&quot; target=&quot;_blank&quot;&gt;jsFiddle&lt;/a&gt; other light weight editors but never though about taking the full development experience into the cloud. I have always felt that the machine installed applications like Intellij, Web Storm or Visual Studio can’t be beaten by a browser. So when I stumbled across a promoted tweet from &lt;a href=&quot;https://codio.com/&quot; target=&quot;_blank&quot;&gt;Codio&lt;/a&gt; I couldn’t pass up the chance to have a good and maybe have my views changed.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;First impressions always count and Codio did not disappoint, a night page listing its features etc then the gold, pricing and sign up. There are two plans the FREE plan that only allows public editing e.g anyone can see what you are working on (I assume that does not mean anyone can edit) and the other os paid which allows you to make the edits private. I of course opted for the free version much like all services I use, since I would be using it for projects I host publicly on Github there is not much point making it private. Speaking of Github, this can be used as the authentication method which works perfectly as most of the time my browser is logged into Github.&lt;/p&gt;
+
+&lt;h2 id=&quot;getting-your-edit-on&quot;&gt;Getting your Edit On&lt;/h2&gt;
+
+&lt;p&gt;So you have an account what now,  create a project to work on. For this review I decided to opt for an existing repo that I have blogged about before &lt;a href=&quot;http://www.christopherlaughlin.co.uk/2014/04/24/meal-finder-ember-full-stack-data/&quot; title=&quot;Meal Finder: Ember Full Stack Data&quot;&gt;Meal &lt;span style=&quot;text-decoration: underline;&quot;&gt;Finder&lt;/span&gt;&lt;/a&gt;.  As you can see from the below screen shot you have number of options for getting you project stated from git, a template, mercurial, zip, FTP and sales force.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1759&quot; style=&quot;width: 410px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.15.02.png&quot;&gt;&lt;img class=&quot;wp-image-1759 size-medium&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.15.02-400x358.png&quot; alt=&quot;Screen Shot 2014-05-15 at 21.15.02&quot; width=&quot;400&quot; height=&quot;358&quot; /&gt;&lt;/a&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;
+    Codio: New Project Page
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;From here I have the project a name and pasted in the git link for Meal Finder, once created you are presented with the repo’s readme file. When first doing this I couldn’t work out if this was a web view of the repo but once looking around I could see the familiar project planner and knew where I was.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1760&quot; style=&quot;width: 410px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.19.16.png&quot;&gt;&lt;img class=&quot;wp-image-1760 size-medium&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.19.16-400x187.png&quot; alt=&quot;Screen Shot 2014-05-15 at 21.19.16&quot; width=&quot;400&quot; height=&quot;187&quot; /&gt;&lt;/a&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;
+    Codio: Project View
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;The code editor is very smooth, some of the features out of the box that really impressed me include auto save, code completion and syntax highlighting. The project I was using was a NodeJS and EmberJS application everything was recognised except the handlebars code. However for the project the handlebars code was placed in the index.html file inside script tags so i was not expecting this to work as this is not fully supported in Web storm.  The file menu along the top of the page also gives some great features almost all working as they would in an installed IDE such as find (which all developers use).&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1761&quot; style=&quot;width: 251px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.26.39.png&quot;&gt;&lt;img class=&quot;wp-image-1761 size-full&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.26.39.png&quot; alt=&quot;Screen Shot 2014-05-15 at 21.26.39&quot; width=&quot;241&quot; height=&quot;264&quot; /&gt;&lt;/a&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;
+    Codio: Find Menu
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;The style and layout reminded me of Sublime Text at points I have feeling that some notes were taken from this. The command bar is a very big give away as this is taken right out of Sublime.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1762&quot; style=&quot;width: 410px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.30.38.png&quot;&gt;&lt;img class=&quot;wp-image-1762 size-medium&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-15-at-21.30.38-400x324.png&quot; alt=&quot;Screen Shot 2014-05-15 at 21.30.38&quot; width=&quot;400&quot; height=&quot;324&quot; /&gt;&lt;/a&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;
+    Codio: Command Bar
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;building-and-deploying&quot;&gt;Building And Deploying&lt;/h2&gt;
+
+&lt;p&gt;So it’s all good being able to edit the code but its nice to be able to deploy and test what changes you have made. Codio has a terminal built into the IDE which supports node.&lt;/p&gt;
+
+&lt;div id=&quot;attachment_1764&quot; style=&quot;width: 410px&quot; class=&quot;wp-caption aligncenter&quot;&gt;
+  &lt;a href=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-17-at-18.26.17.png&quot;&gt;&lt;img class=&quot;wp-image-1764 size-medium&quot; src=&quot;http://www.christopherlaughlin.co.uk/wp-content/uploads/2014/05/Screen-Shot-2014-05-17-at-18.26.17-400x160.png&quot; alt=&quot;Screen Shot 2014-05-17 at 18.26.17&quot; width=&quot;400&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;&lt;p class=&quot;wp-caption-text&quot;&gt;
+    Codio: Terminal
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Out of the box the you get node and npm for running you application, the terminal runs fast and handle all the unix commands you would expect. Within a few minutes I had run npm install to get all the dependencies for the application installed, then installed bower and was able to run up the application. So the application running and express is hosting a static page with my ember application everything should be fine but nothing is that easy. I used bower for installing components like handle bars and jQuery but on first start the application could not see all the bower components. It was strange that some were detected but not all, looking at the project structure I couldn’t see the bower components folder and running any bower commands did not give any output in the terminal. This meant that the app could not run fully as ember would not start without handle bars. I had to resort to using download files instead of bower. Once the node application is started you can view the application by viewing the box url.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Over all the user experience of Codio was great, being able to take a project hosted somewhere else and make changes. Although I only spent a short time when working with the view of reviewing the tool I was really impressed, the fact that everything worked like an on machine IDE. I was surprised with the speeds that the terminal worked and the code completion. The issues with bower let me down a little and made me think twice about how I could build the project. I plan to use the tool more and more to try to get the best out of the Chromebook. I plan to try the git integration and templates in the future.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 17 May 2014 00:00:00 +0100</pubDate>
+        <link>//chrislaughlin.github.io/2014/05/17/review-codio-cloud-based-ide/</link>
+        <guid isPermaLink="true">//chrislaughlin.github.io/2014/05/17/review-codio-cloud-based-ide/</guid>
+        
+        <category>codio</category>
+        
+        <category>ember</category>
+        
+        <category>express</category>
+        
+        <category>javascript</category>
+        
+        <category>node</category>
+        
+        
+        <category>applications</category>
+        
+        <category>code</category>
+        
+        <category>development</category>
+        
+        <category>review</category>
         
       </item>
     

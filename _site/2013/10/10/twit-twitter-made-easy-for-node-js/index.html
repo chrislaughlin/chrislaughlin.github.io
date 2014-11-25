@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <title>Twit: Twitter made easy for Node.js</title>
+  <meta name="description" content="So I came across an interesting blog post about getting a node.js twitter bot up and running in under 20 minutes. From this I decided that I would try out my...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="//chrislaughlin.github.io/2013/10/10/twit-twitter-made-easy-for-node-js/">
+  <link rel="alternate" type="application/atom+xml" title="Chris Laughlin" href="//chrislaughlin.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Chris Laughlin</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Twit: Twitter made easy for Node.js</h1>
+    <p class="post-meta">Oct 10, 2013 • chris</p>
+  </header>
+
+  <article class="post-content">
+    <p>So I came across an interesting blog post about getting a node.js twitter bot up and running in under 20 minutes. From this I decided that I would try out my own working with [Twit][1] and see how easy it is to get started with Twitter and [node.js.][2]</p>
+
+<p>First step was to install the Twit package, this was easy via npm with the following command:</p>
+
+<pre style="text-align: left; padding-left: 60px;">npm install twit</pre>
+
+<p style="text-align: left;">
+  <p style="text-align: left;">
+    This should install Twit into a node_models folder in your project, the next step it to get your twitter application set up. For this i created a test twitter account and linked an application to it, you can create the application linked to the twitter account on the twitter developer site. Once you have created the account you will need to generate tokens for the application make when doing this that you ensure in the application settings that you select read and write as you twitter bot will most likely need to post to twitter. These tokens are used for the oauth authentication that is used for all communications to and from twitter.
+  </p>
+  
+  <p style="text-align: left;">
+    Once this is all done you can start the development, for this blog post ill run though what i have developed so far and hopefully continue the post updating on the changes and advancements to the code (so this code will be untested and rough). For I started by creating a server.js file this will be my main node.js file, for the time being I will have all my code in this but will plan to break out into different modules are time and code grows.
+  </p>
+  
+  <p style="text-align: left;">
+    To start you need to define Twit as a &#8220;class&#8221; so as how things are done in Node.js we &#8220;require&#8221; the twit package.
+  </p>
+  
+  <p style="text-align: left;">
+  </p>
+  
+  <p style="text-align: left;">
+    Also in this block of code we set up the Twit instance T with the access to the twitter user account. next we want to be able to post to a time line, this will test if everything actually works. For this we Twit post function that allows a uri for when to post and params e.g. status, as shown below
+  </p>
+  
+  <p style="text-align: left;">
+  </p>
+  
+  <p style="text-align: left;">
+    <p style="text-align: left;">
+      So from the code you see that we build a string with the date time string this is used to get around a constraint on the status post that doesn&#8217;t allow duplicates in quick succession. We end call T.post and pass in the status uri and the text inside a param. As this essentially is a http.post in the backround we get can pass in a call back funtion. This will get run once the http request has been completed. We will want to get the err (error) if there is one and the reply as the reply will contain data on the tweet that was just posted.
+    </p>
+    
+    <p style="text-align: left;">
+      The last part of code is of course getting tweets, for this I thought that instead of the standard get my timeline or my home time (also my account has no followers and is following no one) I thought that it would be best to try a search. I also know that later on I will be wanting to explore the search in more detail so the more practice the better.
+    </p>
+    
+    <p style="text-align: left;">
+      The below shows how to search for a term and return and display the last 10 tweets with that search term.
+    </p>
+    
+    <p style="text-align: left;">
+    </p>
+    
+    <p style="text-align: left;">
+      This was probably the most tricky due to the lossy typed nature of JavaScript and JSON without knowing the data structure its hard to know what you&#8217;re looking for although the <a href="https://dev.twitter.com/docs/api/1.1/get/search/tweets">twitter dev guides</a> are very useful. This code will then return something like this.
+    </p>
+    
+    <p style="text-align: center;">
+      <a href="http://www.christopherlaughlin.co.uk/wp-content/uploads/2013/10/Screen-Shot-2013-10-10-at-23.08.45.png"><img class="alignnone size-medium wp-image-1588" alt="Screen Shot 2013-10-10 at 23.08.45" src="http://www.christopherlaughlin.co.uk/wp-content/uploads/2013/10/Screen-Shot-2013-10-10-at-23.08.45-400x116.png" width="400" height="116" /></a>
+    </p>
+    
+    <p style="text-align: left;">
+      Some from here I have so far managed to post a status and read a search of statues. Im hopping for the next step to push the token details in to a config class of some sort. Then make a start on a simple UI that will allow me to carry out the actions through a web UI and see the results in a browser. In the mean time all code is being kept in the following github repo and will hopefully be kept up todate.
+    </p>
+    
+    <p style="text-align: left;">
+      <a href="https://github.com/chrislaughlin/nodetwitterbot">https://github.com/chrislaughlin/nodetwitterbot</a>
+    </p>
+    
+    <p style="text-align: left;">
+
+ [1]: https://github.com/ttezel/twit
+ [2]: http://nodejs.org/
+</p></p></p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chris Laughlin</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Chris Laughlin</li>
+          <li><a href="mailto:contact@christopherlaughlin.co.uk">contact@christopherlaughlin.co.uk</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/chrislaughlin">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">chrislaughlin</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/chrislaughlin">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">chrislaughlin</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Rambling of a full stack web application developer, lots of JavaScript and mybe some photos.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
