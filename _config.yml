@@ -15,6 +15,6 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Filtering Content
 show_drafts: null
-limit_posts: 5
+paginate: 5
 future:      true
 unpublished: false
