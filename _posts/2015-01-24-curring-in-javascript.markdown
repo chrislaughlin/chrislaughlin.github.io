@@ -69,7 +69,7 @@ farenheitToCelsius(98); //"36.67 degrees C"
 
 #### The curry Prototype way:
 
-{% highlight javascript %}
+```javascript
 Function.prototype.curry = function() {
   var __method = this;
   var slice = Array.prototype.slice;
@@ -91,7 +91,7 @@ var farenheitToCelsius = converter.curry('degrees C',0.5556, -32);
 milesToKm(10); //"16.09 km"
 poundsToKg(2.5); //"1.14 kg"
 farenheitToCelsius(98); //"36.67 degrees C"
-{% endhighlight %}  
+```  
 
 We can see from the curry example that we can extend the ```Function``` prototype
 to have a curry function that will apply the arguments coming in to the convert
