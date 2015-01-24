@@ -9,7 +9,7 @@ twitter_username: chrislaughlin
 github_username:  chrislaughlin
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
