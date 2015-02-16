@@ -43,6 +43,6 @@ Run build configurations
 - [import preferences](https://www.jetbrains.com/idea/help/optimizing-imports.html) allows you to import a namespace or each individual class, you can also add tolerances to if more that say 3 classes are used from a package then you can import the package.
 - ```cmd + t``` surround code, allowing you to surround a statement easily
 
-These are just some of the tips and tricks that I had picked up from the workshop, the help documentation built into Intellij and the [web site](https://www.jetbrains.com/idea/help/intellij-idea.html) is a great resource for looking for shortcuts and different approaches for completing a task. 
+These are just some of the tips and tricks that I had picked up from the workshop, the help documentation built into Intellij and the [web site](https://www.jetbrains.com/idea/help/intellij-idea.html) is a great resource for looking for shortcuts and different approaches for completing a task. A big thanks to the team at [Dev Bash](http://devbash.org/) for setting up the workshop, check them out for more talks and workshops like this. 
 
 If you have learnt any tips or tricks for using this very powerful IDE please leave a comment.
