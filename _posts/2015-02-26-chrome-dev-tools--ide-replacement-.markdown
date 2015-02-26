@@ -9,7 +9,7 @@ After the first talk it started to dawn on me that with some of the features in 
 
 So how do we streamline this process, enter [Chrome developer tools](https://developer.chrome.com/devtools). The most powerful feature in the sources pannel.
 
-![Chrome Source Panel](/assets/sources-pannel.jpg)
+![Chrome Source Panel](https://raw.githubusercontent.com/chrislaughlin/chrislaughlin.github.io/master/assets/sources-panel.jpg)
 
 As the complexity of JavaScript applications increase, developers need powerful debugging tools to help quickly discover the cause of an issue and fix it efficiently. The Chrome DevTools include a number of useful tools to help make debugging JavaScript less painful.
 
