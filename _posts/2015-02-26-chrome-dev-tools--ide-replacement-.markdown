@@ -24,7 +24,7 @@ This is all great but we are still only in the dev tools, we still need a IDE or
 
 Well we can, dev tools allows you to map files to a local workspace. This makes a link between the files in the browser to the files on you local machine. See this in action below:
 
-![Adding a workspace](http://g.recordit.co/5ST36xVg3B.gif)
+![Adding a workspace](https://raw.githubusercontent.com/chrislaughlin/chrislaughlin.github.io/master/assets/adding-workspace.gif)
 
 Now that the workspace is linked you can make changes in the browser and have these saved to the local file, this now breaks the link between the IDE and the browser. You have created a instant feadback loop.
 
