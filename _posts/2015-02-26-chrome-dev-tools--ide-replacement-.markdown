@@ -9,7 +9,7 @@ After the first talk it started to dawn on me that with some of the features in 
 
 So how do we streamline this process, enter [Chrome developer tools](https://developer.chrome.com/devtools). The most powerful feature in the sources pannel.
 
-![Chrome Source Panel]({{ site.url }}/assets/sources-pannel.jpg)
+![Chrome Source Panel](/assets/sources-pannel.jpg)
 
 As the complexity of JavaScript applications increase, developers need powerful debugging tools to help quickly discover the cause of an issue and fix it efficiently. The Chrome DevTools include a number of useful tools to help make debugging JavaScript less painful.
 
@@ -28,4 +28,4 @@ Well we can, dev tools allows you to map files to a local workspace. This makes 
 
 Now that the workspace is linked you can make changes in the browser and have these saved to the local file, this now breaks the link between the IDE and the browser. You have created a instant feadback loop.
 
-This shows the power of the Chrome developer tools, this is only the start. As time progresses the dev tools will grow it's feature set providing more options for developers. If you have any cool tips or tricks for the dev tools please leave a comment. 
+This shows the power of the Chrome developer tools, this is only the start. As time progresses the dev tools will grow it's feature set providing more options for developers. If you have any cool tips or tricks for the dev tools please leave a comment.
