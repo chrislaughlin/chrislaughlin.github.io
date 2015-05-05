@@ -1,8 +1,4 @@
 ---
-published: false
----
-
----
   layout: post
   title: BelTech 2015
   tag: belfast
