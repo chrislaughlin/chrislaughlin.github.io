@@ -1,8 +1,10 @@
 ---
-  layout: post
-  title: BelTech 2015
-  tag: belfast
-  published: true
+layout: post
+title: BelTech 2015
+status: published
+type: post
+published: true
+comments: true
 ---
 
 I had the pleasure of attending this years [BelTech](http://www.beltech2015.com/) conference hosted in the amazingly designed [Titanic building](http://www.titanicbelfast.com/). The conferences was based on a few topics including smart cities, startups and practitioners. I focused on the smart cities and practitioners.   
