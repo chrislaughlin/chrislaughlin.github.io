@@ -1,11 +1,11 @@
 ---
 layout: post
-title: BelTech 2015: The Internet of Things
+title: BelTech 2015 The internet of Things
 status: published
 type: post
 published: true
 comments: true
---- 
+---
 
 The main theme of the discussion was that IoT (Internet of Things) was **everywhere**. Michael Crossey (Intel) discussed the changes in IoT and how it is  related to the dropping cost of tech. This is related to [Moore’s law](http://en.wikipedia.org/wiki/Moore%27s_law) “_The observation made in 1965 by Gordon Moore, co-founder of Intel, that the number of transistors per square inch on integrated circuits had doubled every year since the integrated circuit was invented. Moore predicted that this trend would continue for the foreseeable future._” 
 
