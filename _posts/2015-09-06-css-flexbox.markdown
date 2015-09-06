@@ -10,7 +10,7 @@ I decided to look into Flexbox and here is a very basic overview of how to use F
 
 The example below shows a container div with 5 children, the container has flex as is display while the children all have flex:1 set.
 
-<p data-height="257" data-theme-id="18619" data-slug-hash="pjJzzv" data-default-tab="result" data-user="chrislaughlin" class='codepen'>See the Pen <a href='http://codepen.io/chrislaughlin/pen/pjJzzv/'>pjJzzv</a> by Chris Laughlin (<a href='http://codepen.io/chrislaughlin'>@chrislaughlin</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="257" data-theme-id="18619" data-slug-hash="ojXvBd" data-default-tab="result" data-user="chrislaughlin" class='codepen'>See the Pen <a href='http://codepen.io/chrislaughlin/pen/ojXvBd/'>ojXvBd</a> by Chris Laughlin (<a href='http://codepen.io/chrislaughlin'>@chrislaughlin</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Note that each child is of equal height and width and all work to fill the parent container. This is the power of Flexbox, there is no need to set any width or height of the container or the children. Also note that the flex:1 of the child is does not effect the layout. This will be applied to each child and will be come more clear in the next example.  
